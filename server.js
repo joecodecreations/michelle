@@ -44,7 +44,24 @@ app.get('/', function (req, res){
 
 app.get('/contact', function (req, res){
   res.render('./pages/contact',{
-  
+
+  });
+})
+
+app.get('/pricing', function (req, res){
+  res.render('./pages/pricing',{
+
+  });
+})
+
+app.get('/videos', function (req, res){
+  res.render('./pages/videos',{
+
+  });
+})
+app.get('/student-portal', function (req, res){
+  res.render('./pages/student-portal',{
+
   });
 })
 

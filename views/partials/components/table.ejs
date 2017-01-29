@@ -1,0 +1,19 @@
+<div class="table-responsive">
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th class="col-md-8">Name</th>
+      <th class="col-md-2">Size</th>
+      <th class="col-md-2">Type</th>
+    </tr>
+  </thead>
+  <tbody class="table-hover">
+    <% for(var i=0; i < data.length; i++) { %>
+       <% var name = data[i].name %>
+       <% var size = data[i].size %>
+       <% var type = "PDF"; %>
+       <% include ./worksheet-row%>
+    <% } %>
+  </tbody>
+  </table>
+</div>

@@ -1,5 +1,23 @@
 body{
 font-family: $primaryFont;
+}
 
-h1{ font-size:2em;}
+h1 {
+  font-size:2.3em;
+}
+
+h2 {
+  font-size:1.8em;
+}
+
+h3 {
+  font-size:1.7em;
+  color:#c1c1c1;
+}
+
+
+
+
+.paragraphStrong{
+  font-weight:800;
 }
