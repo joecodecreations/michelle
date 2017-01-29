@@ -42,6 +42,12 @@ app.get('/', function (req, res){
   });
 })
 
+app.get('/contact', function (req, res){
+  res.render('./pages/contact',{
+  
+  });
+})
+
 module.exports = app;
 
 app.listen(portnumber);
