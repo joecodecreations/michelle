@@ -1,5 +1,8 @@
 body{
 font-family: $primaryFont;
+background-image: ('./images/fib.png');
+background-repeat: no-repeat;
+background-position: left;
 }
 
 h1 {
@@ -15,6 +18,11 @@ h3 {
   color:#c1c1c1;
 }
 
+h4 {
+  font-size:1.3em;
+  color:#666;
+}
+
 
 
 
@@ -24,4 +32,14 @@ h3 {
 
 .pointer {
   cursor: pointer;
+}
+
+.modal-content {
+  padding:10px;
+  background-color:#ffe6cc;
+}
+
+.table-responsive {
+  border-top:1px solid #666;
+  margin-top:1em;
 }

@@ -1,0 +1,85 @@
+<% var pageTitle = "Checkout"; %>
+<% include ../partials/header %>
+<% include ../partials/pagename %>
+
+<h3>Would you like to upgrade this package for two more free hours for an extra $50 ?</h3>
+<div class="row">
+<div class="col-md-6">
+
+  <% var column1= "Item Description" %>
+  <% var column2= "Quantity" %>
+  <% var column3= "Price" %>
+  <h3>Your Cart</h3>
+  <% var data = [
+    { column1: "4 hr Package - Meet with me Weekly", column2: "1", column3: "$480" }
+
+    ]; %>
+  <% include ../partials/components/table %>
+</div>
+<div class="col-md-6">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Payment Details
+                    </h3>
+                    <div class="checkbox pull-right">
+                        <label>
+                            <input type="checkbox" />
+                            Remember
+                        </label>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                    <div class="form-group">
+                        <label for="cardNumber">
+                            CARD NUMBER</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="cardNumber" placeholder="XXXX-XXXX-XXXX"
+                                required autofocus />
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        </div>
+                    </div>
+                      <!-- Name -->
+          <div class="control-group">
+            <label class="control-label"  for="username">CARD HOLDER'S NAME</label>
+            <div class="controls">
+                 <input type="text" class="form-control" id="cardNumber" placeholder=""
+                                required  />
+            </div>
+          </div>
+                    <div class="row">
+                        <div class="col-xs-7 col-md-7">
+                            <div class="form-group">
+                                <label for="expityMonth">
+                                    EXPIRY DATE</label>
+                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                    <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                                </div>
+                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                    <input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-5 col-md-5 pull-right">
+                            <div class="form-group">
+                                <label for="cvCode">
+                                    CVV2 CODE</label>
+                                <input type="password" class="form-control" id="cvCode" placeholder="CVV2" required />
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span>4200</span> Invoice Total</a>
+                </li>
+            </ul>
+            <br/>
+            <a href="#" class="btn btn-success btn-lg btn-block" role="button">Pay</a>
+        </div>
+
+</div>
+
+<% include ../partials/footer %>

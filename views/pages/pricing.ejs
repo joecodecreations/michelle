@@ -1,32 +1,31 @@
 <% var pageTitle = "Pricing"; %>
 <% include ../partials/header %>
 <% include ../partials/pagename %>
+
+
+
 <div class="row">
-  <div class="col-md-4"></div>
-  <div class="col-md-4">
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Your Name</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="i.e Joe Smith">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">City</label>
-        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="city">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputFile">File input</label>
-        <input type="file" id="exampleInputFile">
-        <p class="help-block">Example block-level help text here.</p>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> I am a current
-        </label>
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+  <div class="col-sm-6 col-md-4">
+    <% var pricingTitle = "4 Hour Package" %>
+    <% var pricingHeading = "Meet with me weekly" %>
+    <% var pricingPrice = "180" %>
+    <% var pricingSummary = "Purchase a 4 hour package to meet with me one hour a week for a month. We can work on weekly assignments in the areas you need help." %>
+    <% include ../partials/components/price-item %>
   </div>
-<div class="col-md-4"></div>
+
+  <div class="col-sm-6 col-md-4">
+    <% var pricingTitle = "8 Hour Package" %>
+    <% var pricingHeading = "Meet with me Two Hours a Week" %>
+    <% var pricingPrice = "350" %>
+    <% var pricingSummary = "Purchase an 8 hr package to meet with me one hour twice a week or two hours once a week on a set schedule.  We will build on skills learned in the classroom to keep you from falling behind. This package is perfect for the student who needs more one-on-one attention in today's crowded learning environment. I offer a limited number of this package each semester due to limited availability in my schedule." %> 
+    <% include ../partials/components/price-item %>
+  </div>
 </div>
+<div class="alert alert-warning" role="alert">Meeting days and times will be scheduled in advance.</div>
+<div class="alert alert-warning" role="alert">Expires 30 days from date of purchase. Unused hours may NOT be rolled over into the next month.</div>
+<div class="alert alert-warning" role="alert">Package will need to be renewed each month. No partial refunds.</div>
+
+
+
 
 <% include ../partials/footer %>

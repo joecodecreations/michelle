@@ -41,7 +41,11 @@ app.get('/', function (req, res){
     body: "Hello World"
   });
 })
+app.get('/checkout', function (req, res){
+  res.render('./pages/checkout',{
 
+  });
+})
 app.get('/contact', function (req, res){
   res.render('./pages/contact',{
 
@@ -64,6 +68,8 @@ app.get('/student-portal', function (req, res){
 
   });
 })
+
+
 
 module.exports = app;
 

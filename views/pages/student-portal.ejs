@@ -1,64 +1,187 @@
-<% var javascript = "alert('working');" %>
+<% var javascript = "" %>
 
 
 <% var pageTitle = "Student Portal"; %>
 <% include ../partials/header %>
 <% include ../partials/pagename %>
 
+
+
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-7"><h3>Student Login</h3><br /><% include ../partials/components/login %></div>
+  <div class="col-md-2"></div>
+</div>
+
 <div class="row">
   <div class="col-md-12">
     <div class="page-header">
-      <h2>Worksheets</h2>
+      <h2>Reviews</h2>
     </div>
   </div>
-  </div>
-
+</div>
 <div class="row">
-  <div class="col-md-6">
-    <h3>Reviews</h3>
+  <div class="col-md-12">
+    <% var column1= "Name" %>
+    <% var column2= "Type" %>
+    <% var column3= "Filesize" %>
     <% var data = [
-      { name: "1st Quarter Review", size: "253 Kb" },
-      { name: "1st Quarter Review Key", size: "122 kb" },
-      { name: "2nd Quarter Review.pdf", size: "189 Kb" },
-      { name: "2nd Quarter Review Key", size: "311 Kb" },
-      { name: "Review Units 1 to 4.", size: "141 Kb" },
-      { name: "Cumm Review Units 1 to 4 Key", size: "179 Kb" },
-      { name: "Cumm Review Units 1 to 5", size: "480 Kb" },
-      { name: "Midterm Review", size: "4020 Kb" },
-      { name: "Midterm Review Key", size: "6084 Kb" },
-      { name: "Quiz Simplifying Radicals", size: "85 Kb" },
-      { name: "Quiz Simplifying Radicals Answers", size: "73 Kb" }
+      { column1: "1st Quarter Review", column2: "253 Kb", column3: "PDF" },
+      { column1: "1st Quarter Review Key", column2: "122 kb", column3: "PDF" },
+      { column1: "2nd Quarter Review.pdf", column2: "189 Kb", column3: "PDF" },
+      { column1: "2nd Quarter Review Key", column2: "311 Kb", column3: "PDF" },
+      { column1: "Review Units 1 to 4.", column2: "141 Kb", column3: "PDF" },
+      { column1: "Cumm Review Units 1 to 4 Key", column2: "179 Kb", column3: "PDF" },
+      { column1: "Cumm Review Units 1 to 5", column2: "480 Kb", column3: "PDF" },
+      { column1: "Midterm Review", column2: "4020 Kb", column3: "PDF" },
+      { column1: "Midterm Review Key", column2: "6084 Kb", column3: "PDF" },
+      { column1: "Quiz Simplifying Radicals", column2: "85 Kb", column3: "PDF" },
+      { column1: "Quiz Simplifying Radicals Answers", column2: "73 Kb", column3: "PDF" }
       ]; %>
     <% include ../partials/components/table%>
 
-    </div>
+  </div>
+</div>
 
+<div class="row">
+  <div class="col-md-12">
+    <div class="page-header">
+      <h2>Units</h2>
+    </div>
+  </div>
+</div>
+<div class="row">
   <div class="col-md-6">
     <h3>Unit 1 - Geometry</h3>
     <% var data = [
-      { name: "Transformation Rules", size: "24 Kb" },
-      { name: "  Unit 1 Homework", size: "932 Kb" },
-      { name: "Unit 1 Homework Continued", size: "1476 Kb " }
+      { column1: "Transformation Rules", column2: "24 Kb", column3: "PDF" },
+      { column1: "Unit 1 Homework", column2: "932 Kb", column3: "PDF" },
+      { column1: "Unit 1 Homework Continued", column2: "1476 Kb ", column3: "PDF" }
       ]; %>
     <% include ../partials/components/table%>
 
 
     <h3>Unit 2:  Quadratic Functions</h3>
       <% var data = [
-        { name: "Transformation Rules", size: "24 Kb" },
-        { name: "  Unit 1 Homework", size: "932 Kb" },
-        { name: "Unit 1 Homework Continued", size: "1476 Kb " }
+        { column1: "Transformation Rules", column2: "24 Kb", column3: "PDF" },
+        { column1: "Unit 1 Homework", column2: "932 Kb", column3: "PDF" },
+        { column1: "Unit 1 Homework Continued", column2: "1476 Kb ", column3: "PDF" }
         ]; %>
      <% include ../partials/components/table%>
 
+
+     <h3>Unit 3:  Exponential Functions</h3>
+       <% var data = [
+         { column1: "Exponents Radicals", column2: "334 Kb", column3: "PDF" },
+         { column1: "Logs Radical Equations", column2: "1182 Kb", column3: "PDF" }
+         ]; %>
+      <% include ../partials/components/table%>
+
+</div>
+<div class="col-md-6">
+      <h3>Unit 4:  Advanced Functions</h3>
+        <% var data = [
+          { column1: "Unit 4 Adv Functions Rational Equations", column2: "712 Kb", column3: "PDF" },
+          { column1: "Unit 4 Functions Translations", column2: "743 Kb", column3: "PDF" }
+          ]; %>
+       <% include ../partials/components/table%>
+
+
+       <h3>Unit 5:  Trig Functions</h3>
+         <% var data = [
+           { column1: "Unit 5 Triangle Trig", column2: "1233 Kb", column3: "PDF" },
+           { column1: "Unit 5 Trig part 2", column2: "499 Kb", column3: "PDF" },
+           { column1: "Unit 5 Test Review Key", column2: "128 Kb", column3: "PDF" }
+           ]; %>
+        <% include ../partials/components/table%>
+
+
+        <h3>Unit 6:  Probability</h3>
+          <% var data = [
+            { column1: "Unit 6 Probability", column2: "649 Kb", column3: "PDF" },
+            { column1: "Unit 6 Probability Review Answers", column2: "208 Kb", column3: "PDF" }
+            ]; %>
+         <% include ../partials/components/table%>
+
+
+
     </div>
   </div>
-</div>
 
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-  <div class="modal-dialog modal-sm" role="document">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header">
+        <h2>Common Core 3 ( Also known as Math 3)</h2>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Unit 1:  Statistics</h3>
+      <% var data = [
+        { column1: "Unit 1 Statistics", column2: "9145 Kb", column3: "PDF" },
+        { column1: "Unit 1 Review Sheet", column2: "307 Kb", column3: "PDF" },
+        { column1: "Unit 1 Review Sheet - Answer Key", column2: "690 Kb ", column3: "PDF" },
+        { column1: "Z-table values", column2: "207 Kb ", column3: "PDF" },
+        { column1: "Normal Distribution (p34 Correction)", column2: "92 Kb ", column3: "PDF" }
+        ]; %>
+      <% include ../partials/components/table%>
+
+      <h3>Unit 2A:  Modeling with Linear Functions</h3>
+      <% var data = [
+        { column1: "Unit 2A Modeling with Linear Functions", column2: "2357 Kb", column3: "PDF" }
+        ]; %>
+      <% include ../partials/components/table%>
+
+      <h3>Unit 2B:  Geometry Proofs</h3>
+      <% var data = [
+        { column1: "Unit 2B Geometry Proofs", column2: "2235 Kb", column3: "PDF" }
+        ]; %>
+      <% include ../partials/components/table%>
+
+
+
+
+  </div>
+  <div class="col-md-6">
+
+    <h3>Unit 3:  Quadratic Modelling</h3>
+    <% var data = [
+      { column1: "Unit 3 Quadratics", column2: "2680 Kb", column3: "PDF" }
+      ]; %>
+    <% include ../partials/components/table%>
+
+
+    <h3>Unit 4:  Polynomials</h3>
+    <% var data = [
+      { column1: "Unit 4 Polynomials", column2: "1715 Kb", column3: "PDF" },
+      { column1: "Unit 4 Polynomial Review with Answers", column2: "93 Kb", column3: "PDF" }
+      ]; %>
+    <% include ../partials/components/table%>
+
+    <h3>Unit 5:  Exponents and Logarithms</h3>
+    <% var data = [
+      { column1: "Unit 5 Logarithms", column2: "2046 Kb", column3: "PDF" },
+      { column1: "Unit 5 Review Answers", column2: "40 Kb", column3: "PDF" }
+
+      ]; %>
+    <% include ../partials/components/table%>
+
+
+
+
+
+      </div>
+    </div>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-      Please login to use worksheets
+      <center><h2>Please login to use worksheets</h2><br />
+
+      <% include ../partials/components/login %>
+    </center>
     </div>
   </div>
 </div>
