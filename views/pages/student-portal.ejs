@@ -1,6 +1,10 @@
+<% var javascript = "alert('working');" %>
+
+
 <% var pageTitle = "Student Portal"; %>
 <% include ../partials/header %>
 <% include ../partials/pagename %>
+
 <div class="row">
   <div class="col-md-12">
     <div class="page-header">
@@ -13,17 +17,17 @@
   <div class="col-md-6">
     <h3>Reviews</h3>
     <% var data = [
-      { name: "1st Quarter Review", size: "253.88 Kb" },
+      { name: "1st Quarter Review", size: "253 Kb" },
       { name: "1st Quarter Review Key", size: "122 kb" },
-      { name: "2nd Quarter Review.pdf", size: "189.277 Kb" },
-      { name: "2nd Quarter Review Key", size: "311.688 Kb" },
-      { name: "Review Units 1 to 4.", size: "141.181 Kb" },
-      { name: "Cumm Review Units 1 to 4 Key", size: "179.555 Kb" },
-      { name: "Cumm Review Units 1 to 5", size: "480.505 Kb" },
-      { name: "Midterm Review", size: "4020.23 Kb" },
-      { name: "Midterm Review Key", size: "6084.815 Kb" },
-      { name: "Quiz Simplifying Radicals", size: "85.503 Kb" },
-      { name: "Quiz Simplifying Radicals Answers", size: "73.179 Kb" }
+      { name: "2nd Quarter Review.pdf", size: "189 Kb" },
+      { name: "2nd Quarter Review Key", size: "311 Kb" },
+      { name: "Review Units 1 to 4.", size: "141 Kb" },
+      { name: "Cumm Review Units 1 to 4 Key", size: "179 Kb" },
+      { name: "Cumm Review Units 1 to 5", size: "480 Kb" },
+      { name: "Midterm Review", size: "4020 Kb" },
+      { name: "Midterm Review Key", size: "6084 Kb" },
+      { name: "Quiz Simplifying Radicals", size: "85 Kb" },
+      { name: "Quiz Simplifying Radicals Answers", size: "73 Kb" }
       ]; %>
     <% include ../partials/components/table%>
 
@@ -32,21 +36,29 @@
   <div class="col-md-6">
     <h3>Unit 1 - Geometry</h3>
     <% var data = [
-      { name: "Transformation Rules", size: "24.627 Kb" },
-      { name: "  Unit 1 Homework", size: "932.856 Kb" },
-      { name: "Unit 1 Homework Continued", size: "1476.582 Kb " }
+      { name: "Transformation Rules", size: "24 Kb" },
+      { name: "  Unit 1 Homework", size: "932 Kb" },
+      { name: "Unit 1 Homework Continued", size: "1476 Kb " }
       ]; %>
     <% include ../partials/components/table%>
 
 
     <h3>Unit 2:  Quadratic Functions</h3>
       <% var data = [
-        { name: "Transformation Rules", size: "24.627 Kb" },
-        { name: "  Unit 1 Homework", size: "932.856 Kb" },
-        { name: "Unit 1 Homework Continued", size: "1476.582 Kb " }
+        { name: "Transformation Rules", size: "24 Kb" },
+        { name: "  Unit 1 Homework", size: "932 Kb" },
+        { name: "Unit 1 Homework Continued", size: "1476 Kb " }
         ]; %>
      <% include ../partials/components/table%>
 
+    </div>
+  </div>
+</div>
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      Please login to use worksheets
     </div>
   </div>
 </div>
