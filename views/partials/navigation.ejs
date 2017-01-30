@@ -11,40 +11,19 @@
       <a class="navbar-brand" href="#">Raleigh Math Tutor</a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li <%if (pageTitle =="Home") { %>class="active"<% } %> ><a href="/">Home<span class="sr-only">(current)</span></a></li>
-        <li <%if (pageTitle =="About") { %>class="active"<% } %> ><a href="/about">About Me</a></li>
-        <li <%if (pageTitle =="Pricing") { %>class="active"<% } %> ><a href="/pricing">Pricing</a></li>
-        <li  <%if (pageTitle =="Tutoring Experience") { %>class="active"<% } %> ><a href="/tutoring-experience">Tutoring Experience</a></li>
-        <li <%if (pageTitle =="Videos") { %>class="active"<% } %> ><a href="/videos">Videos</a></li>
-        <!-- <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Tutoring Experience</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Videos</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Packages</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Contact Me</a></li>
-            <li><a href="#">Resume</a></li>
-          </ul>
-        </li> -->
-        <li <%if (pageTitle =="Contact Me") { %>class="active"<% } %> ><a href="/contact">Contact Me</a></li>
+        <li <%if (pageTitle =="Home") { %>class="active"<% } %> ><a href="/" title="home" alt="home">Home<span class="sr-only">(current)</span></a></li>
+        <li <%if (pageTitle =="Pricing") { %>class="active"<% } %> ><a href="/pricing" alt="view Pricing Details" title="view Pricing Details">Pricing</a></li>
+        <li  <%if (pageTitle =="Tutoring Experience") { %>class="active"<% } %> ><a href="/tutoring-experience" alt="tutoring experience" title="tutoring experience">Tutoring Experience</a></li>
+        <li <%if (pageTitle =="Videos") { %>class="active"<% } %> ><a href="/videos" alt="view a math tutorial video">Videos</a></li>
+        <li <%if (pageTitle =="Contact Me") { %>class="active"<% } %> ><a href="/contact" alt="Contact Me" title="Contact Me">Contact Me</a></li>
+        <li class="phoneNumber" ><% include ../partials/components/phoneNumber %></li>
       </ul>
-
-
       <ul class="nav navbar-nav navbar-right">
-          <li <%if (pageTitle =="Student Portal") { %>class="active"<% } %> ><a href="/student-portal">
-            <span class="glyphicon glyphicon-align-left glyphicon-education" aria-hidden="true"></span> Student Portal / Login</a></li>
-            <!-- <form class="navbar-form navbar-left">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default">Search</button>
-            </form> -->
+          <li <%if (pageTitle =="Student Portal") { %>class="active"<% } %> ><a href="/student-portal" title="student portal" alt="student portal">
+            <span class="glyphicon glyphicon-align-left glyphicon-education" aria-hidden="true" title="log into the student porta'"></span> Student Portal / Login</a></li>
+
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

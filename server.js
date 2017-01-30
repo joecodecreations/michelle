@@ -63,8 +63,15 @@ app.get('/videos', function (req, res){
 
   });
 })
+
 app.get('/student-portal', function (req, res){
   res.render('./pages/student-portal',{
+
+  });
+})
+
+app.get('/tutoring-experience', function (req, res){
+  res.render('./pages/tutoring-experience',{
 
   });
 })

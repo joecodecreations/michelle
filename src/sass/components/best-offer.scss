@@ -1,0 +1,29 @@
+$color:#398dff;
+
+.modal__ribbon {
+  font-size: 24px !important;
+width: 9em;
+background: #398dff;
+color: #fff;
+z-index: 1;
+height: 1em;
+display: -webkit-flex;
+display: -ms-flexbox;
+-webkit-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+transform: rotate(-45deg);
+text-align: center;
+padding-left: .3em;
+display: flex;
+margin-left: -59px;
+margin-top: 42px;
+position: absolute;
+display: table;
+}
+
+
+.modal__ribbon-content{
+  color:white;
+  text-shadow:1px 1px 1px #000;
+
+}

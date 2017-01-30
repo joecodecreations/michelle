@@ -5,21 +5,37 @@
 
 
 <div class="row">
-  <div class="col-sm-6 col-md-4">
+
     <% var pricingTitle = "4 Hour Package" %>
     <% var pricingHeading = "Meet with me weekly" %>
     <% var pricingPrice = "180" %>
-    <% var pricingSummary = "Purchase a 4 hour package to meet with me one hour a week for a month. We can work on weekly assignments in the areas you need help." %>
+    <% var pricingSummary1 = "4 Hour Package" %>
+    <% var pricingSummary2 = "Meet Once a Week" %>
+    <% var pricingSummary3 = "One Month Commitment" %>
     <% include ../partials/components/price-item %>
-  </div>
 
-  <div class="col-sm-6 col-md-4">
+
+    
     <% var pricingTitle = "8 Hour Package" %>
     <% var pricingHeading = "Meet with me Two Hours a Week" %>
-    <% var pricingPrice = "350" %>
-    <% var pricingSummary = "Purchase an 8 hr package to meet with me one hour twice a week or two hours once a week on a set schedule.  We will build on skills learned in the classroom to keep you from falling behind. This package is perfect for the student who needs more one-on-one attention in today's crowded learning environment. I offer a limited number of this package each semester due to limited availability in my schedule." %> 
+    <% var pricingSummary1 = "8 Hour Package" %>
+    <% var pricingSummary2 = "Meet 1HR Twice a week" %>
+    <% var pricingSummary3 = "or 2HRs Once a Week" %>
+    <% var bestOffer = true %>
+    <% var pricingPrice = "325" %>
+      <% include ../partials/components/price-item %>
+
+
+    <% var bestOffer = false %>
+    <% var pricingTitle = "1 Hour - Pay Per Session" %>
+    <% var pricingHeading = "No Commitment or Advanced Deposit" %>
+    <% var pricingPrice = "50" %>
+
+    <% var pricingSummary1 = "No Commitment Required" %>
+    <% var pricingSummary2 = "Pay as you go" %>
+    <% var pricingSummary3 = "Schedule 1 Session" %>
     <% include ../partials/components/price-item %>
-  </div>
+
 </div>
 <div class="alert alert-warning" role="alert">Meeting days and times will be scheduled in advance.</div>
 <div class="alert alert-warning" role="alert">Expires 30 days from date of purchase. Unused hours may NOT be rolled over into the next month.</div>

@@ -1,15 +1,183 @@
 <% var pageTitle = "Home"; %>
 <% include ../partials/header %>
 <div class="jumbotron">
-<img src="images/michelle.jpg" title="Michelle Myers" class="img-thumbnail" /><h1>Michelle Myers</h1>
-  <p>Professional Math Tutor: Raleigh North Carolina</p>
+
+  <div class="row">
+    <div class="col-md-3">
+      <img src="images/michelle.jpg" title="Michelle Myers" class="img-thumbnail" />
+    </div>
+
+  <div class="col-md-9">
+    <h1>Michelle Myers</h1>
+      <h3>Professional Math Tutor: Raleigh North Carolina</h3>
+      <p>My name is Michelle C Myers.  I moved to the Raleigh area August 2011 from my hometown in Hattiesburg, Mississippi. As an independent tutor, I provide one-on-one educational instruction for a reasonable fee. Tutoring is provided either in your home or at a public location like a local library. If you or someone you know is struggling with math, let me help.  Many of my students have told me I was able to help them even when other tutors could not.  I continually find unique ways of explaining math problems in ways that will help the students fully understand. You won't be disappointed.</p>
+    <a href="/pricing" alt="click to buy a discounted package" title="click to buy a discounted package"><button type="button" class="btn btn-success btn-lg active">Buy a discounted Package Today!</button></a><br /><br />
+      <!-- <a href="/tutoring-experience"><button type="button" class="btn btn-warning blackfont" >Read about my tutoring experience</button></a> <a href="/tutoring-experience"><button type="button" class="btn btn-primary" >Read reviews from my students</button></a> -->
+  </div>
 
 </div>
+
+</div>
+
+
 <div class="row">
-  <!-- <img src="images/michelle-teaching1.jpg" title="test" />  -->
-  <img src="images/michelle.jpg" title="Michelle Myers" class="img-thumbnail" />
-  <div class="page-header">
-    <h1>Michelle Myers <small>Professional Math Tutor: Raleigh North Carolina</small></h1>
+  <div class="col-md-4 text-center">
+    <h2>Learn from the best math
+      tutor in Raleigh, North Carolina. Feel confident with my real progress guarantee<sub class="sub">1</sub><h2>
+    <img src="images/guarantee.png" title="Michelle Myers" />
+  </div>
+
+  <div class="col-md-4">
+    <div class="lists">
+    Three Easy Ways To Pay:
+    <ol>
+      <li>Securely Online through my website using a Debit or Credit Card</li>
+      <li>In Person a check or cash </li>
+      <li>Paypal</li>
+    </ol>
+
+    <center><a href="/pricing" class='cta'>Get Started Now</a></center>
+  </div>
+
+  </div>
+
+
+  <div class="col-md-4">
+    continued learning through
+    web portal worksheets and tests
   </div>
 </div>
+
+<div class="spacer row"><div class="col-md-12"></div></div>
+
+<div class="row">
+  <div class="col-md-12">
+
+    <div class="page-header">
+      <h1>Read Parent &amp; Student Reviews</h1>
+    </div>
+  </div>
+</div>
+
+<div class="row broun-block">
+            <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+
+
+
+                                            <% var reviews = [
+                                            {
+                                              reviewName: "Penny B.",rating: "5", reviewLocation: "Raleigh, North Carolina",review: "When I first began searching for an ACT prep tutor for our daughter, I chose Michelle for her background in mathematics. I was so pleased that she was very friendly and accommodating to our busy schedule. She has a very pleasant teaching style, and our daughter felt she was extremely helpful in preparing her for the exam. I would highly recommend Michelle for any of your tutoring needs-especially for math!"
+                                             },
+
+                                             {
+                                               reviewName: "Singl S",
+                                                   rating: "5",
+                                           reviewLocation: "Cary, North Carolina",
+                                                   review: "We were very pleased with Michelle being flexible and coming over during the weekend. We were mostly impressed by Michelle being honest regarding our daughter's needs. When there was no need for an additional session we were informed about that. My daughter mentioned that Michelle was patient and never showed frustration with her."
+                                              },
+
+                                              {
+                                                reviewName: "Dr. Frances A. Karnes",
+                                                    rating: "5",
+                                            reviewLocation: "Hattiesburg, MS",
+                                                    review: "It was a pleasure having you teach for us in the Summer Program for Academically Talented Youth. The students benefited from your knowledge. We hope that you will join us again next summer.Thank you for your contributions in making our summer programs greatly successful."
+                                               },
+
+                                                                    {
+                                                                      reviewName: "Sharon S",rating: "5",  reviewLocation: "Apex, North Carolina",  review: "My daughter was stuggling with frustration on being able to keep up in her algebra II class. Michelle got to work immediately in bolstering her confidence and understanding of the material. Even very smart students need help staying on target sometimes. Working with Michelle let her relax so she could do her best. She went from failing some early tests to having a B in the semester. THANKS MICHELLE!!!!!"
+                                                                     },
+
+
+
+
+
+                                                                      {
+                                                                        reviewName: "Sandy B.",
+                                                                            rating: "5",
+                                                                    reviewLocation: "Raleigh, North Carolina",
+                                                                            review: "Michelle is a godsend! She is helping my 9th grade son tremendously!"
+                                                                       },
+
+
+                                                                       {
+                                                                         reviewName: "Rusty L.",
+                                                                             rating: "5",
+                                                                     reviewLocation: "Raleigh, North Carolina",
+                                                                             review: "Thanks for helping (my wife) pass college algebra, You're a life saver.  Thanks again."
+                                                                        },
+
+
+                                                                        {
+                                                                          reviewName: "Stephanie W.",
+                                                                              rating: "5",
+                                                                      reviewLocation: "Cary, North Carolina",
+                                                                              review: "Thanks for taking the time to prepare me for my ACT, my math skills are terrible but you helped me overcome my math obstacles and I got a good score."
+                                                                         },
+
+
+                                                                         {
+                                                                           reviewName: "Tara B",
+                                                                               rating: "5",
+                                                                       reviewLocation: "Raleigh, North Carolina",
+                                                                               review: "I would highly reccomend Michelle Myers for tutoring in anything that is math related!!!"
+                                                                          },
+
+                                                                          {
+                                                                            reviewName: "Wanda F.",
+                                                                                rating: "5",
+                                                                          reviewLocation: "Raleigh, North Carolina",
+                                                                                review: "Caleb took his test on yesterday, and he made a 89.  Thank you, thank you, thank you!!! ...... Thank you for working with him."
+                                                                           },
+
+
+                                                                          {
+                                                                            reviewName: "Cameron O.",
+                                                                                rating: "5",
+                                                                        reviewLocation: "Raleigh, North Carolina",
+                                                                                review: "Michelle is the best tutor I have had for math since I've been here hands down.."
+                                                                           }
+
+
+
+
+
+
+
+                                              ]; %>
+                                              <div class="item active">
+                                          <% var counter =0; %>
+                                          <% for(var i=0; i < 3; i++) { %>
+<% var counter = counter + i %>
+                                            <% var reviewName = reviews[i].reviewName %>
+                                             <% var rating = reviews[i].rating %>
+                                             <% var review = reviews[i].review %>
+                                             <% var reviewImage = "" %>
+                                             <% var reviewLocation = reviews[i].reviewLocation %>
+                                             <% include ../partials/components/reviews %>
+
+                                          <% } %>
+                                        </div>
+
+                                        <div class="item">
+                                    <% var counter =0; %>
+                                    <% for(var i=4; i < 7; i++) { %>
+<% var counter = counter + i %>
+                                      <% var reviewName = reviews[i].reviewName %>
+                                       <% var rating = reviews[i].rating %>
+                                       <% var review = reviews[i].review %>
+                                       <% var reviewImage = "" %>
+                                       <% var reviewLocation = reviews[i].reviewLocation %>
+                                       <% include ../partials/components/reviews %>
+
+                                    <% } %>
+                                  </div>
+</div>
+</div>
+</div>
+
+
+  <!-- <img src="images/michelle-student1.png" title="Michelle Myers" class="img-thumbnail" /> -->
+
 <% include ../partials/footer %>

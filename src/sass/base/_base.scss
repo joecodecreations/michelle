@@ -3,6 +3,50 @@ font-family: $primaryFont;
 background-image: ('./images/fib.png');
 background-repeat: no-repeat;
 background-position: left;
+background:eee;
+
+}
+.cta a,.cta a:visited,a .cta:active{
+
+text-decoration: underline;
+font-weight: 100;
+color:blue;
+margin: 0 auto;
+text-align: center;
+
+&:hover {
+  color:lightblue;
+  text-decoration: none;
+}
+}
+#wrapper,.container-fluid {
+    position: relative;
+}
+.lists{
+  font-size:24px;
+  line-height: 3em;
+  & ul {
+    line-height: 2em;
+  }
+  & li {
+    font-size:18px;
+    font-weight:600;
+    line-height: 1em;
+    margin-top:15px;
+
+  }
+}
+.ssl {
+  position: absolute;
+  bottom: -281px;
+  right: left;
+  width: 83px;
+  height: auto;
+  margin-bottom: 0px;
+  z-index: 1;
+}
+.blackfont{
+  color:#666;
 }
 
 h1 {
@@ -22,10 +66,28 @@ h4 {
   font-size:1.3em;
   color:#666;
 }
+.broun-block {
+  min-height: 380px;
+}
+.review-person-name{
+  position: relative;
 
+  z-index: 1000;
+  margin-top:25px;
 
+  padding-top:10px;
+  & p {
+    color: #fc0;
+    text-decoration: underline;
+  }
+}
 
+.sub {font-size:.4em;}
+.spacer {margin-top:30px;}
 
+.img-thumbnail{
+  float:left;
+}
 .paragraphStrong{
   font-weight:800;
 }
@@ -39,7 +101,39 @@ h4 {
   background-color:#ffe6cc;
 }
 
+
+.ccicons {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0v;
+}
+
+
 .table-responsive {
   border-top:1px solid #666;
   margin-top:1em;
+}
+
+.phoneNumber {
+  color:#FE0;
+  opacity:.8;
+  font-size:18px;
+  margin-top:11px;
+}
+
+.footer {
+  min-height:50px;
+  padding-top:15px;
+  background: #c1c1c1;
+  position:static;
+  bottom:0;
+  padding-bottom:20px;
+
+  & p {
+    margin: 0 auto;
+
+    text-align: center;
+  }
 }
