@@ -81,4 +81,5 @@ app.get('/tutoring-experience', function (req, res){
 module.exports = app;
 
 app.listen(portnumber);
-//console.log("Express Server with EJS Running on Port: "+portnumber);
+
+console.log("Express Server with EJS Running on Port: "+portnumber);

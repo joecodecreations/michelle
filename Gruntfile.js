@@ -18,13 +18,14 @@ module.exports = function(grunt) {
   //grunt.loadNpmTasks('gruntify-eslint');
   require('./grunt_tasks/sass.js')(grunt, pkg, paths, connect);
   require('./grunt_tasks/server.js')(grunt, pkg, paths, connect);
+  require('./grunt_tasks/javascript.js')(grunt, pkg, paths);
 
   grunt.config.merge({
     pkg: grunt.file.readJSON('package.json')
   });
 
   require('load-grunt-tasks')(grunt);
-
+grunt.loadNpmTasks("grunt-modernizr");
 
   grunt.registerTask('processSass', 'Process sass code.', [
     'sass_globbing',
@@ -85,10 +86,14 @@ module.exports = function(grunt) {
       });
     }
     tasks.push(
+      'jshint',
+      'concat',
+      'modernizr',
       'sass_globbing',
       'sass',
       'postcss',
-      'startServer'
+      'startServer',
+      'watcher'
     );
 
     // Kick off the task runs
